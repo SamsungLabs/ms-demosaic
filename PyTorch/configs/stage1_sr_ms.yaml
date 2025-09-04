@@ -1,0 +1,34 @@
+# config.yaml
+
+# --- Hardware & General ---
+num_gpus: 2
+num_workers: 16
+
+# --- Training settings ---
+epochs: 80
+batchsize: 16
+lr: 0.0001
+lrdf: 0.5
+lrdp: 25
+chkpointperiod: 1
+trimages: 0
+val_frq: 1
+patchnum: 1
+patchsz: 256
+
+# --- Model & input settings ---
+model: nafms
+input_type: ms_mosaic_ds4
+sr: true
+out_special: null
+backbone: naf
+
+# --- Paths & checkpointing ---
+trdir: /datasets/ms_quantized
+odir: /datasets/sai/spectral_demosaic_network_outputs
+job_id: null
+load: null
+
+# --- Testing & visualization ---
+test: false
+plot_images: false
