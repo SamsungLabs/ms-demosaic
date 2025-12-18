@@ -1,6 +1,5 @@
 hpc_run_scripts/error
 hpc_run_scripts/output
-*.npy
 .DS_Store
 .huskyrc.json
 rebuatall_deltaes
